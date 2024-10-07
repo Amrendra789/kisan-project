@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <style>
+        body {
+          background-image: url('land2.jpg');
+        }
+        </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/equipment">Equipment</a>
+        <a href="/booking">Booking Slot</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/payment">Payment Gateway</a>
+        <a href="/logout">Logout</a>
+      </div>
+      <div class="booking-form">
+        <h2>Select Equipment</h2>
+        <div class="equipment">
+            <div class="equipment-item">
+                <img src="tractor.jpeg" alt="Tractor">
+                <p>Tractor</p>
+                <span class="availability available">Available</span>
+            </div>
+            <div class="equipment-item">
+                <img src="harvest.jpg" alt="Harvester">
+                <p>Harvester</p>
+                <span class="availability unavailable">Unavailable</span>
+            </div>
+            <div class="equipment-item">
+                <img src="plow.png" alt="Plow">
+                <p>Plow</p>
+                <span class="availability available">Available</span>
+            </div>
+            <div class="equipment-item">
+                <img src="sprayer.webp" alt="Sprayer">
+                <p>Sprayer</p>
+                <span class="availability available">Available</span>
+            </div>
+        </div>
+        <h2>Choose Dates</h2>
+        <input type="date" id="start-date" name="start-date">
+        <label for="start-date">Start Date</label><br>
+        <input type="date" id="end-date" name="end-date">
+        <label for="end-date">End Date</label><br>
+
+        <h2>Confirm Booking</h2>
+        <button>Confirm Booking</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
